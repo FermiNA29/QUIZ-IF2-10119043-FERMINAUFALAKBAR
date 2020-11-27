@@ -11,7 +11,7 @@ import java.util.Scanner;
  * NAMA      : FERMI NAUFAL AKBAR
  * NIM       : 10119043
  * KELAS     : IF2
- * DESKRIPSI : 
+ * DESKRIPSI : program belanja
  */
 public class QUIZIF210119043FERMINAUFALAKBAR {
 
@@ -45,8 +45,14 @@ public class QUIZIF210119043FERMINAUFALAKBAR {
         System.out.print("Are you Member : ");
         String valid = scanner.next();
         
-        serviceprice.getSale(serviceprice.checkMemberStatus(valid.toLowerCase()), serviceprice.getPrice(chose));
         
+        
+        System.out.println("**********************");
+        System.out.println("**CUSTOMER SERVICE****");
+        System.out.println("Date Transaction : ");
+        System.out.println("Service Price : " + serviceprice.getPrice(chose));
+        System.out.println("Discount : " + serviceprice.getSale(serviceprice.checkMemberStatus(valid.toLowerCase()), serviceprice.getPrice(chose)));
+        System.out.println("Total Pay : ");
     }
     
 }
